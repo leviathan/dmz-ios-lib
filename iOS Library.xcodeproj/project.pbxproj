@@ -8,15 +8,70 @@
 
 /* Begin PBXBuildFile section */
 		611472F5147EA3FE00F9DEA2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 611472F4147EA3FE00F9DEA2 /* Foundation.framework */; };
-		611472FB147EA3FE00F9DEA2 /* iOS_Library.m in Sources */ = {isa = PBXBuildFile; fileRef = 611472FA147EA3FE00F9DEA2 /* iOS_Library.m */; };
+		61147323147EA45D00F9DEA2 /* DZMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 61147309147EA45D00F9DEA2 /* DZMacros.h */; };
+		61147325147EA45D00F9DEA2 /* NSArray+DZ.h in Headers */ = {isa = PBXBuildFile; fileRef = 6114730B147EA45D00F9DEA2 /* NSArray+DZ.h */; };
+		61147326147EA45D00F9DEA2 /* NSArray+DZ.m in Sources */ = {isa = PBXBuildFile; fileRef = 6114730C147EA45D00F9DEA2 /* NSArray+DZ.m */; };
+		61147327147EA45D00F9DEA2 /* NSData+DZ.h in Headers */ = {isa = PBXBuildFile; fileRef = 6114730D147EA45D00F9DEA2 /* NSData+DZ.h */; };
+		61147328147EA45D00F9DEA2 /* NSData+DZ.m in Sources */ = {isa = PBXBuildFile; fileRef = 6114730E147EA45D00F9DEA2 /* NSData+DZ.m */; };
+		61147329147EA45D00F9DEA2 /* NSDate+DZ.h in Headers */ = {isa = PBXBuildFile; fileRef = 6114730F147EA45D00F9DEA2 /* NSDate+DZ.h */; };
+		6114732A147EA45D00F9DEA2 /* NSDate+DZ.m in Sources */ = {isa = PBXBuildFile; fileRef = 61147310147EA45D00F9DEA2 /* NSDate+DZ.m */; };
+		6114732B147EA45D00F9DEA2 /* NSMutableArray+DZ.h in Headers */ = {isa = PBXBuildFile; fileRef = 61147311147EA45D00F9DEA2 /* NSMutableArray+DZ.h */; };
+		6114732C147EA45D00F9DEA2 /* NSMutableArray+DZ.m in Sources */ = {isa = PBXBuildFile; fileRef = 61147312147EA45D00F9DEA2 /* NSMutableArray+DZ.m */; };
+		6114732D147EA45D00F9DEA2 /* NSNotificationCenter+DZ.h in Headers */ = {isa = PBXBuildFile; fileRef = 61147313147EA45D00F9DEA2 /* NSNotificationCenter+DZ.h */; };
+		6114732E147EA45D00F9DEA2 /* NSNotificationCenter+DZ.m in Sources */ = {isa = PBXBuildFile; fileRef = 61147314147EA45D00F9DEA2 /* NSNotificationCenter+DZ.m */; };
+		6114732F147EA45D00F9DEA2 /* NSObject+DZ.h in Headers */ = {isa = PBXBuildFile; fileRef = 61147315147EA45D00F9DEA2 /* NSObject+DZ.h */; };
+		61147330147EA45D00F9DEA2 /* NSObject+DZ.m in Sources */ = {isa = PBXBuildFile; fileRef = 61147316147EA45D00F9DEA2 /* NSObject+DZ.m */; };
+		61147331147EA45D00F9DEA2 /* NSString+DZ.h in Headers */ = {isa = PBXBuildFile; fileRef = 61147317147EA45D00F9DEA2 /* NSString+DZ.h */; };
+		61147332147EA45D00F9DEA2 /* NSString+DZ.m in Sources */ = {isa = PBXBuildFile; fileRef = 61147318147EA45D00F9DEA2 /* NSString+DZ.m */; };
+		61147333147EA45D00F9DEA2 /* NSThread+DZ.h in Headers */ = {isa = PBXBuildFile; fileRef = 61147319147EA45D00F9DEA2 /* NSThread+DZ.h */; };
+		61147334147EA45D00F9DEA2 /* NSThread+DZ.m in Sources */ = {isa = PBXBuildFile; fileRef = 6114731A147EA45D00F9DEA2 /* NSThread+DZ.m */; };
+		61147335147EA45D00F9DEA2 /* NSURL+DZ.h in Headers */ = {isa = PBXBuildFile; fileRef = 6114731B147EA45D00F9DEA2 /* NSURL+DZ.h */; };
+		61147336147EA45D00F9DEA2 /* NSURL+DZ.m in Sources */ = {isa = PBXBuildFile; fileRef = 6114731C147EA45D00F9DEA2 /* NSURL+DZ.m */; };
+		61147337147EA45D00F9DEA2 /* UIView+DZ.h in Headers */ = {isa = PBXBuildFile; fileRef = 6114731D147EA45D00F9DEA2 /* UIView+DZ.h */; };
+		61147338147EA45D00F9DEA2 /* UIView+DZ.m in Sources */ = {isa = PBXBuildFile; fileRef = 6114731E147EA45D00F9DEA2 /* UIView+DZ.m */; };
+		61147339147EA45D00F9DEA2 /* UIViewController+DZ.h in Headers */ = {isa = PBXBuildFile; fileRef = 6114731F147EA45D00F9DEA2 /* UIViewController+DZ.h */; };
+		6114733A147EA45D00F9DEA2 /* UIViewController+DZ.m in Sources */ = {isa = PBXBuildFile; fileRef = 61147320147EA45D00F9DEA2 /* UIViewController+DZ.m */; };
+		6114733B147EA45D00F9DEA2 /* NSLocale+DZ.h in Headers */ = {isa = PBXBuildFile; fileRef = 61147321147EA45D00F9DEA2 /* NSLocale+DZ.h */; };
+		6114733C147EA45D00F9DEA2 /* NSLocale+DZ.m in Sources */ = {isa = PBXBuildFile; fileRef = 61147322147EA45D00F9DEA2 /* NSLocale+DZ.m */; };
+		61147343147EA4F700F9DEA2 /* DZFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 61147341147EA4F700F9DEA2 /* DZFilter.h */; };
+		61147344147EA4F700F9DEA2 /* DZFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 61147342147EA4F700F9DEA2 /* DZFilter.m */; };
+		61147347147EA50800F9DEA2 /* UIDevice+DZ.h in Headers */ = {isa = PBXBuildFile; fileRef = 61147345147EA50800F9DEA2 /* UIDevice+DZ.h */; };
+		61147348147EA50800F9DEA2 /* UIDevice+DZ.m in Sources */ = {isa = PBXBuildFile; fileRef = 61147346147EA50800F9DEA2 /* UIDevice+DZ.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		611472F1147EA3FE00F9DEA2 /* libiOS Library.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libiOS Library.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		611472F4147EA3FE00F9DEA2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		611472F8147EA3FE00F9DEA2 /* iOS Library-Prefix.pch */ = {isa = PBXFileReference; path = "iOS Library-Prefix.pch"; sourceTree = "<group>"; };
-		611472F9147EA3FE00F9DEA2 /* iOS_Library.h */ = {isa = PBXFileReference; path = iOS_Library.h; sourceTree = "<group>"; };
-		611472FA147EA3FE00F9DEA2 /* iOS_Library.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOS_Library.m; sourceTree = "<group>"; };
+		611472F8147EA3FE00F9DEA2 /* iOS Library-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iOS Library-Prefix.pch"; sourceTree = "<group>"; };
+		61147309147EA45D00F9DEA2 /* DZMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZMacros.h; sourceTree = "<group>"; };
+		6114730B147EA45D00F9DEA2 /* NSArray+DZ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+DZ.h"; sourceTree = "<group>"; };
+		6114730C147EA45D00F9DEA2 /* NSArray+DZ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+DZ.m"; sourceTree = "<group>"; };
+		6114730D147EA45D00F9DEA2 /* NSData+DZ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+DZ.h"; sourceTree = "<group>"; };
+		6114730E147EA45D00F9DEA2 /* NSData+DZ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+DZ.m"; sourceTree = "<group>"; };
+		6114730F147EA45D00F9DEA2 /* NSDate+DZ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+DZ.h"; sourceTree = "<group>"; };
+		61147310147EA45D00F9DEA2 /* NSDate+DZ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+DZ.m"; sourceTree = "<group>"; };
+		61147311147EA45D00F9DEA2 /* NSMutableArray+DZ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+DZ.h"; sourceTree = "<group>"; };
+		61147312147EA45D00F9DEA2 /* NSMutableArray+DZ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+DZ.m"; sourceTree = "<group>"; };
+		61147313147EA45D00F9DEA2 /* NSNotificationCenter+DZ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNotificationCenter+DZ.h"; sourceTree = "<group>"; };
+		61147314147EA45D00F9DEA2 /* NSNotificationCenter+DZ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNotificationCenter+DZ.m"; sourceTree = "<group>"; };
+		61147315147EA45D00F9DEA2 /* NSObject+DZ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+DZ.h"; sourceTree = "<group>"; };
+		61147316147EA45D00F9DEA2 /* NSObject+DZ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+DZ.m"; sourceTree = "<group>"; };
+		61147317147EA45D00F9DEA2 /* NSString+DZ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DZ.h"; sourceTree = "<group>"; };
+		61147318147EA45D00F9DEA2 /* NSString+DZ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DZ.m"; sourceTree = "<group>"; };
+		61147319147EA45D00F9DEA2 /* NSThread+DZ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSThread+DZ.h"; sourceTree = "<group>"; };
+		6114731A147EA45D00F9DEA2 /* NSThread+DZ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSThread+DZ.m"; sourceTree = "<group>"; };
+		6114731B147EA45D00F9DEA2 /* NSURL+DZ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+DZ.h"; sourceTree = "<group>"; };
+		6114731C147EA45D00F9DEA2 /* NSURL+DZ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+DZ.m"; sourceTree = "<group>"; };
+		6114731D147EA45D00F9DEA2 /* UIView+DZ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+DZ.h"; sourceTree = "<group>"; };
+		6114731E147EA45D00F9DEA2 /* UIView+DZ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+DZ.m"; sourceTree = "<group>"; };
+		6114731F147EA45D00F9DEA2 /* UIViewController+DZ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+DZ.h"; sourceTree = "<group>"; };
+		61147320147EA45D00F9DEA2 /* UIViewController+DZ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+DZ.m"; sourceTree = "<group>"; };
+		61147321147EA45D00F9DEA2 /* NSLocale+DZ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLocale+DZ.h"; sourceTree = "<group>"; };
+		61147322147EA45D00F9DEA2 /* NSLocale+DZ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLocale+DZ.m"; sourceTree = "<group>"; };
+		61147341147EA4F700F9DEA2 /* DZFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZFilter.h; sourceTree = "<group>"; };
+		61147342147EA4F700F9DEA2 /* DZFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZFilter.m; sourceTree = "<group>"; };
+		61147345147EA50800F9DEA2 /* UIDevice+DZ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+DZ.h"; sourceTree = "<group>"; };
+		61147346147EA50800F9DEA2 /* UIDevice+DZ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+DZ.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,7 +89,7 @@
 		611472E6147EA3FE00F9DEA2 = {
 			isa = PBXGroup;
 			children = (
-				611472F6147EA3FE00F9DEA2 /* iOS Library */,
+				611472F6147EA3FE00F9DEA2 /* Classes */,
 				611472F3147EA3FE00F9DEA2 /* Frameworks */,
 				611472F2147EA3FE00F9DEA2 /* Products */,
 			);
@@ -56,13 +111,41 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		611472F6147EA3FE00F9DEA2 /* iOS Library */ = {
+		611472F6147EA3FE00F9DEA2 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				611472F9147EA3FE00F9DEA2 /* iOS_Library.h */,
-				611472FA147EA3FE00F9DEA2 /* iOS_Library.m */,
+				61147309147EA45D00F9DEA2 /* DZMacros.h */,
+				6114730B147EA45D00F9DEA2 /* NSArray+DZ.h */,
+				6114730C147EA45D00F9DEA2 /* NSArray+DZ.m */,
+				61147345147EA50800F9DEA2 /* UIDevice+DZ.h */,
+				61147346147EA50800F9DEA2 /* UIDevice+DZ.m */,
+				6114730D147EA45D00F9DEA2 /* NSData+DZ.h */,
+				6114730E147EA45D00F9DEA2 /* NSData+DZ.m */,
+				6114730F147EA45D00F9DEA2 /* NSDate+DZ.h */,
+				61147310147EA45D00F9DEA2 /* NSDate+DZ.m */,
+				61147311147EA45D00F9DEA2 /* NSMutableArray+DZ.h */,
+				61147312147EA45D00F9DEA2 /* NSMutableArray+DZ.m */,
+				61147313147EA45D00F9DEA2 /* NSNotificationCenter+DZ.h */,
+				61147314147EA45D00F9DEA2 /* NSNotificationCenter+DZ.m */,
+				61147315147EA45D00F9DEA2 /* NSObject+DZ.h */,
+				61147316147EA45D00F9DEA2 /* NSObject+DZ.m */,
+				61147317147EA45D00F9DEA2 /* NSString+DZ.h */,
+				61147318147EA45D00F9DEA2 /* NSString+DZ.m */,
+				61147319147EA45D00F9DEA2 /* NSThread+DZ.h */,
+				6114731A147EA45D00F9DEA2 /* NSThread+DZ.m */,
+				6114731B147EA45D00F9DEA2 /* NSURL+DZ.h */,
+				6114731C147EA45D00F9DEA2 /* NSURL+DZ.m */,
+				6114731D147EA45D00F9DEA2 /* UIView+DZ.h */,
+				6114731E147EA45D00F9DEA2 /* UIView+DZ.m */,
+				6114731F147EA45D00F9DEA2 /* UIViewController+DZ.h */,
+				61147320147EA45D00F9DEA2 /* UIViewController+DZ.m */,
+				61147321147EA45D00F9DEA2 /* NSLocale+DZ.h */,
+				61147322147EA45D00F9DEA2 /* NSLocale+DZ.m */,
+				61147341147EA4F700F9DEA2 /* DZFilter.h */,
+				61147342147EA4F700F9DEA2 /* DZFilter.m */,
 				611472F7147EA3FE00F9DEA2 /* Supporting Files */,
 			);
+			name = Classes;
 			path = "iOS Library";
 			sourceTree = "<group>";
 		};
@@ -81,6 +164,21 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61147323147EA45D00F9DEA2 /* DZMacros.h in Headers */,
+				61147325147EA45D00F9DEA2 /* NSArray+DZ.h in Headers */,
+				61147327147EA45D00F9DEA2 /* NSData+DZ.h in Headers */,
+				61147329147EA45D00F9DEA2 /* NSDate+DZ.h in Headers */,
+				6114732B147EA45D00F9DEA2 /* NSMutableArray+DZ.h in Headers */,
+				6114732D147EA45D00F9DEA2 /* NSNotificationCenter+DZ.h in Headers */,
+				6114732F147EA45D00F9DEA2 /* NSObject+DZ.h in Headers */,
+				61147331147EA45D00F9DEA2 /* NSString+DZ.h in Headers */,
+				61147333147EA45D00F9DEA2 /* NSThread+DZ.h in Headers */,
+				61147335147EA45D00F9DEA2 /* NSURL+DZ.h in Headers */,
+				61147337147EA45D00F9DEA2 /* UIView+DZ.h in Headers */,
+				61147339147EA45D00F9DEA2 /* UIViewController+DZ.h in Headers */,
+				6114733B147EA45D00F9DEA2 /* NSLocale+DZ.h in Headers */,
+				61147343147EA4F700F9DEA2 /* DZFilter.h in Headers */,
+				61147347147EA50800F9DEA2 /* UIDevice+DZ.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,7 +233,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				611472FB147EA3FE00F9DEA2 /* iOS_Library.m in Sources */,
+				61147326147EA45D00F9DEA2 /* NSArray+DZ.m in Sources */,
+				61147328147EA45D00F9DEA2 /* NSData+DZ.m in Sources */,
+				6114732A147EA45D00F9DEA2 /* NSDate+DZ.m in Sources */,
+				6114732C147EA45D00F9DEA2 /* NSMutableArray+DZ.m in Sources */,
+				6114732E147EA45D00F9DEA2 /* NSNotificationCenter+DZ.m in Sources */,
+				61147330147EA45D00F9DEA2 /* NSObject+DZ.m in Sources */,
+				61147332147EA45D00F9DEA2 /* NSString+DZ.m in Sources */,
+				61147334147EA45D00F9DEA2 /* NSThread+DZ.m in Sources */,
+				61147336147EA45D00F9DEA2 /* NSURL+DZ.m in Sources */,
+				61147338147EA45D00F9DEA2 /* UIView+DZ.m in Sources */,
+				6114733A147EA45D00F9DEA2 /* UIViewController+DZ.m in Sources */,
+				6114733C147EA45D00F9DEA2 /* NSLocale+DZ.m in Sources */,
+				61147344147EA4F700F9DEA2 /* DZFilter.m in Sources */,
+				61147348147EA50800F9DEA2 /* UIDevice+DZ.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,6 +336,7 @@
 				61147300147EA3FE00F9DEA2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
