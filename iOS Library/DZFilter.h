@@ -9,6 +9,8 @@
 #import <Foundation/Foundation.h>
 
 
+#if __IPHONE_OS_VERSION_MAX_ALLOWED >= 50000
+
 @interface DZFilter : NSObject
 
 // Effects
@@ -27,3 +29,5 @@
 + (UIImage *)sharpenImageFromImage:(UIImage *)image;
 
 @end
+
+#endif

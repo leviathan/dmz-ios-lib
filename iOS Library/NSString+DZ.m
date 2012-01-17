@@ -11,6 +11,8 @@
 
 @implementation NSString (DZ)
 
+#pragma mark - State
+
 - (BOOL)isEmpty {
     return [self length] == 0;
 }
@@ -19,9 +21,10 @@
     return ![self isEmpty];
 }
 
+#pragma mark - Searching
 
 - (BOOL)containsSubstring:(NSString *)substring {
-    NSRange textRange = [[self lowercaseString] rangeOfString:[substring lowercaseString]];
+    NSRange textRange = [self rangeOfString:substring options:NSCaseInsensitiveSearch];
     return textRange.location != NSNotFound;
 }
 

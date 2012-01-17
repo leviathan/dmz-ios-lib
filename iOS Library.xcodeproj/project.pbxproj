@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		611472F5147EA3FE00F9DEA2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 611472F4147EA3FE00F9DEA2 /* Foundation.framework */; };
+		611472F5147EA3FE00F9DEA2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 611472F4147EA3FE00F9DEA2 /* Foundation.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		61147323147EA45D00F9DEA2 /* DZMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 61147309147EA45D00F9DEA2 /* DZMacros.h */; };
 		61147325147EA45D00F9DEA2 /* NSArray+DZ.h in Headers */ = {isa = PBXBuildFile; fileRef = 6114730B147EA45D00F9DEA2 /* NSArray+DZ.h */; };
 		61147326147EA45D00F9DEA2 /* NSArray+DZ.m in Sources */ = {isa = PBXBuildFile; fileRef = 6114730C147EA45D00F9DEA2 /* NSArray+DZ.m */; };
@@ -37,6 +37,9 @@
 		61147344147EA4F700F9DEA2 /* DZFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 61147342147EA4F700F9DEA2 /* DZFilter.m */; };
 		61147347147EA50800F9DEA2 /* UIDevice+DZ.h in Headers */ = {isa = PBXBuildFile; fileRef = 61147345147EA50800F9DEA2 /* UIDevice+DZ.h */; };
 		61147348147EA50800F9DEA2 /* UIDevice+DZ.m in Sources */ = {isa = PBXBuildFile; fileRef = 61147346147EA50800F9DEA2 /* UIDevice+DZ.m */; };
+		617ADEAC14C595B20015C57F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 617ADEAB14C595B20015C57F /* QuartzCore.framework */; };
+		617ADEAF14C596DC0015C57F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 617ADEAE14C596DC0015C57F /* CoreGraphics.framework */; };
+		617ADEB114C597180015C57F /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 617ADEB014C597180015C57F /* Accelerate.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +75,9 @@
 		61147342147EA4F700F9DEA2 /* DZFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZFilter.m; sourceTree = "<group>"; };
 		61147345147EA50800F9DEA2 /* UIDevice+DZ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+DZ.h"; sourceTree = "<group>"; };
 		61147346147EA50800F9DEA2 /* UIDevice+DZ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+DZ.m"; sourceTree = "<group>"; };
+		617ADEAB14C595B20015C57F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		617ADEAE14C596DC0015C57F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		617ADEB014C597180015C57F /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +85,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				617ADEB114C597180015C57F /* Accelerate.framework in Frameworks */,
+				617ADEAF14C596DC0015C57F /* CoreGraphics.framework in Frameworks */,
+				617ADEAC14C595B20015C57F /* QuartzCore.framework in Frameworks */,
 				611472F5147EA3FE00F9DEA2 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -106,6 +115,9 @@
 		611472F3147EA3FE00F9DEA2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				617ADEB014C597180015C57F /* Accelerate.framework */,
+				617ADEAE14C596DC0015C57F /* CoreGraphics.framework */,
+				617ADEAB14C595B20015C57F /* QuartzCore.framework */,
 				611472F4147EA3FE00F9DEA2 /* Foundation.framework */,
 			);
 			name = Frameworks;

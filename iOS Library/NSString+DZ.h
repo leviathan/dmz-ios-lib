@@ -11,8 +11,11 @@
 
 @interface NSString (DZ)
 
+// State
 - (BOOL)isEmpty;
 - (BOOL)isNotEmpty;
+
+// Searching
 - (BOOL)containsSubstring:(NSString *)substring;
 
 @end

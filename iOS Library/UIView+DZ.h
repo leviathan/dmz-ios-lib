@@ -30,4 +30,10 @@
 - (UIView *)subviewOfAllSubviewsWhichSatisfy:(BOOL (^) (UIView *))block;
 - (NSArray *)subviewsOfAllSubviewsWhichSatisfy:(BOOL (^) (UIView *))block;
 
+// Animation
+- (void)animateRightBounce;
+- (void)animateLeftBounce;
+- (void)animateBottomBounce;
+- (void)animateTopBounce;
+
 @end

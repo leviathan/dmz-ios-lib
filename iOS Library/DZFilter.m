@@ -7,6 +7,9 @@
 //
 
 #import "DZFilter.h"
+
+#if __IPHONE_OS_VERSION_MAX_ALLOWED >= 50000
+
 #import <QuartzCore/QuartzCore.h>
 #import <CoreImage/CoreImage.h>
 #import <ImageIO/ImageIO.h>
@@ -389,3 +392,5 @@ CGContextRef __CreateARGBBitmapContext (CGImageRef inImage) {
     CGColorSpaceRelease( colorSpace );   
     return context;
 }
+
+#endif

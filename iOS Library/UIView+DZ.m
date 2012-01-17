@@ -8,11 +8,12 @@
 
 #import "UIView+DZ.h"
 
+#import <QuartzCore/QuartzCore.h>
+
 
 @implementation UIView (DZ)
 
-#pragma mark -
-#pragma mark Dimension attributes
+#pragma mark - Dimension attributes
 
 - (CGSize)size {
 	return self.frame.size;
@@ -62,8 +63,7 @@
 	self.frame = CGRectMake(self.frame.origin.x, y, self.frame.size.width, self.frame.size.height);
 }
 
-#pragma mark -
-#pragma mark Alignment
+#pragma mark - Alignment
 
 - (void)alignCenterToCenterOfSuperviewAnimated:(BOOL)animated {
 	if (!self.superview)
@@ -101,8 +101,7 @@
 		self.center = newCenter;		
 }
 
-#pragma mark -
-#pragma mark Query
+#pragma mark - Query
 
 - (UIView *)subviewWhichSatisfy:(BOOL (^) (UIView *))block {
 	for (UIView *aView in self.subviews)
@@ -133,6 +132,48 @@
 	for (UIView *aView in self.subviews)
 		[views addObjectsFromArray:[aView subviewsOfAllSubviewsWhichSatisfy:block]];
 	return views;
+}
+
+#pragma mark - Animation
+
+- (void)animateRightBounce {
+    CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"position"];
+    animation.duration = 0.1f;
+    animation.repeatCount = 1.0f;
+    animation.autoreverses = YES;
+    animation.fromValue = [NSValue valueWithCGPoint:CGPointMake(self.center.x, self.center.y)];
+    animation.toValue = [NSValue valueWithCGPoint:CGPointMake(self.center.x - 3.0f, self.center.y)];
+    [self.layer addAnimation:animation forKey:@"position"];
+}
+
+- (void)animateLeftBounce {
+    CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"position"];
+    animation.duration = 0.1f;
+    animation.repeatCount = 1.0f;
+    animation.autoreverses = YES;
+    animation.fromValue = [NSValue valueWithCGPoint:CGPointMake(self.center.x, self.center.y)];
+    animation.toValue = [NSValue valueWithCGPoint:CGPointMake(self.center.x + 3.0f, self.center.y)];
+    [self.layer addAnimation:animation forKey:@"position"];
+}
+
+- (void)animateBottomBounce {
+    CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"position"];
+    animation.duration = 0.1f;
+    animation.repeatCount = 1.0f;
+    animation.autoreverses = YES;
+    animation.fromValue = [NSValue valueWithCGPoint:CGPointMake(self.center.x, self.center.y)];
+    animation.toValue = [NSValue valueWithCGPoint:CGPointMake(self.center.x, self.center.y - 3.0f)];
+    [self.layer addAnimation:animation forKey:@"position"];
+}
+
+- (void)animateTopBounce {
+    CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"position"];
+    animation.duration = 0.1f;
+    animation.repeatCount = 1.0f;
+    animation.autoreverses = YES;
+    animation.fromValue = [NSValue valueWithCGPoint:CGPointMake(self.center.x, self.center.y)];
+    animation.toValue = [NSValue valueWithCGPoint:CGPointMake(self.center.x, self.center.y + 3.0f)];
+    [self.layer addAnimation:animation forKey:@"position"];
 }
 
 @end
