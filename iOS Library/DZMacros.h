@@ -35,6 +35,7 @@
 #define $B(b) ((b) ? (id)kCFBooleanTrue : (id)kCFBooleanFalse)
 #define $URL(url) [NSURL URLWithString:url]
 #define $LS(string) NSLocalizedString(string, nil)
+#define $IMG(name) [UIImage imageNamed:name]
 
 // Singleton
 

@@ -16,4 +16,6 @@
 	 */
 	- (id)ifRespondsPerformSelector:(SEL)selector;
 	- (id)ifRespondsPerformSelector:(SEL)selector withObject:(id)firstObject;
+
+    - (void)performBlockOnMainThread:(void (^)(void))block;
 @end

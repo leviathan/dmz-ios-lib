@@ -11,11 +11,11 @@
 
 
 
-void *NewBase64Decode(const char *inputBuffer,
+void *dmzNewBase64Decode(const char *inputBuffer,
                       size_t length,
                       size_t *outputLength);
 
-char *NewBase64Encode(const void *inputBuffer,
+char *dmzNewBase64Encode(const void *inputBuffer,
                       size_t length,
                       bool separateLines,
                       size_t *outputLength);

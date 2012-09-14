@@ -10,6 +10,11 @@
 
 @interface UIViewController (UIViewController_DZ)
 
+// Factory
 + (id)viewController;
+
+// Storyboard
+- (id)viewControllerFromStoryboardWithIdentifier:(NSString *)identifier;
+- (id)viewControllerFromStoryboard:(NSString *)storyboardName withIdentifier:(NSString *)identifier;
 
 @end

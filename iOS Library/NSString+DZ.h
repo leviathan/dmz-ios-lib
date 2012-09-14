@@ -14,6 +14,7 @@
 // State
 - (BOOL)isEmpty;
 - (BOOL)isNotEmpty;
+- (BOOL)isNumeric;
 
 // Searching
 - (BOOL)containsSubstring:(NSString *)substring;

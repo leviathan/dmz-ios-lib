@@ -21,6 +21,12 @@
     return ![self isEmpty];
 }
 
+- (BOOL)isNumeric {
+	NSNumberFormatter* numberFormatter = [[[NSNumberFormatter alloc] init] autorelease];
+	NSNumber *number = [numberFormatter numberFromString:self];
+	return (number != nil);
+}
+
 #pragma mark - Searching
 
 - (BOOL)containsSubstring:(NSString *)substring {

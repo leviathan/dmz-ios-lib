@@ -50,7 +50,7 @@ static unsigned char base64DecodeLookup[256] =
 #define BASE64_UNIT_SIZE 4
 
 //
-// NewBase64Decode
+// dmzNewBase64Decode
 //
 // Decodes the base64 ASCII string in the inputBuffer to a newly malloced
 // output buffer.
@@ -62,7 +62,7 @@ static unsigned char base64DecodeLookup[256] =
 // returns the decoded buffer. Must be free'd by caller. Length is given by
 //	outputLength.
 //
-void *NewBase64Decode(
+void *dmzNewBase64Decode(
                       const char *inputBuffer,
                       size_t length,
                       size_t *outputLength)
@@ -122,7 +122,7 @@ void *NewBase64Decode(
 }
 
 //
-// NewBase64Encode
+// dmzNewBase64Encode
 //
 // Encodes the arbitrary data in the inputBuffer as base64 into a newly malloced
 // output buffer.
@@ -137,7 +137,7 @@ void *NewBase64Decode(
 // returns the encoded buffer. Must be free'd by caller. Length is given by
 //	outputLength.
 //
-char *NewBase64Encode(
+char *dmzNewBase64Encode(
                       const void *buffer,
                       size_t length,
                       bool separateLines,
@@ -268,7 +268,7 @@ char *NewBase64Encode(
 {
 	NSData *data = [aString dataUsingEncoding:NSASCIIStringEncoding];
 	size_t outputLength;
-	void *outputBuffer = NewBase64Decode([data bytes], [data length], &outputLength);
+	void *outputBuffer = dmzNewBase64Decode([data bytes], [data length], &outputLength);
 	NSData *result = [NSData dataWithBytes:outputBuffer length:outputLength];
 	free(outputBuffer);
 	return result;
@@ -287,7 +287,7 @@ char *NewBase64Encode(
 {
 	size_t outputLength;
 	char *outputBuffer =
-    NewBase64Encode([self bytes], [self length], true, &outputLength);
+    dmzNewBase64Encode([self bytes], [self length], true, &outputLength);
 	
 	NSString *result =
     [[[NSString alloc]

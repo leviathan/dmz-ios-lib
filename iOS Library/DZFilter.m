@@ -325,7 +325,7 @@ CGContextRef __CreateARGBBitmapContext (CGImageRef inImage);
                      colorSpace:(CGColorSpaceRef)colorSpace 
                      bitmapInfo:(CGBitmapInfo)info
            colorRenderingIntent:(CGColorRenderingIntent)intent {
-    CFDataRef imgData = (__bridge CFDataRef)[NSData dataWithBytes:outData length:bytesPerRow * h];
+    CFDataRef imgData = (CFDataRef)[NSData dataWithBytes:outData length:bytesPerRow * h];
     CGDataProviderRef imgDataProvider = CGDataProviderCreateWithCFData(imgData);
     
     CGImageRef throughCGImage = CGImageCreate(w, h, bitsPerComponent, bitsPerPixel, bytesPerRow, colorSpace, info, imgDataProvider, NULL, NO, intent);

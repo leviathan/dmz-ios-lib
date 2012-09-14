@@ -26,4 +26,13 @@
 	return nil;
 }
 
+- (void)performBlockOnMainThread:(void (^)(void))block {
+    block = [[block copy] autorelease];
+    [self performSelectorOnMainThread:@selector(fireBlock:) withObject:block waitUntilDone:NO];
+}
+
+- (void)fireBlock:(void (^)(void))block {
+    block();
+}
+
 @end

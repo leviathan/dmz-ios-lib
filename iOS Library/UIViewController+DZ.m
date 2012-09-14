@@ -7,10 +7,26 @@
 
 #import "UIViewController+DZ.h"
 
+
 @implementation UIViewController (UIViewController_DZ)
+
+#pragma mark - Factory
 
 + (id)viewController {
     return [[[[self class] alloc] init] autorelease];
 }
+
+#pragma mark - Storyboard
+
+- (id)viewControllerFromStoryboardWithIdentifier:(NSString *)identifier {
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"MainStoryboard" bundle:nil];
+    return [storyboard instantiateViewControllerWithIdentifier:identifier];
+}
+
+- (id)viewControllerFromStoryboard:(NSString *)storyboardName withIdentifier:(NSString *)identifier {
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:storyboardName bundle:nil];
+    return [storyboard instantiateViewControllerWithIdentifier:identifier];
+}
+
 
 @end
