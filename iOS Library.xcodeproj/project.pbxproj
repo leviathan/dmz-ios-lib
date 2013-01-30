@@ -227,7 +227,7 @@
 		611472E8147EA3FE00F9DEA2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0420;
+				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = Dreimannzelt;
 			};
 			buildConfigurationList = 611472EB147EA3FE00F9DEA2 /* Build configuration list for PBXProject "iOS Library" */;
