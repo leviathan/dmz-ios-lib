@@ -36,6 +36,7 @@
 - (void)animateBottomBounce;
 - (void)animateTopBounce;
 
-- (void)fadeOutWithDuration:(NSTimeInterval)duratio;
+- (void)fadeInWithDuration:(NSTimeInterval)duration;
+- (void)fadeOutWithDuration:(NSTimeInterval)duration;
 
 @end

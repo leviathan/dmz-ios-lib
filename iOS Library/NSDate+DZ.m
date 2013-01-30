@@ -22,8 +22,7 @@
 
 @implementation NSDate (DZ)
 
-#pragma mark -
-#pragma mark Date components
+#pragma mark - Date components
 
 - (NSInteger)nearestHour {
 	NSTimeInterval aTimeInterval = [[NSDate date] timeIntervalSinceReferenceDate] + D_MINUTE * 30;
@@ -77,8 +76,7 @@
 	return [components year];
 }
 
-#pragma mark -
-#pragma mark Formatting
+#pragma mark - Formatting
 
 - (NSString *)stringWithFormat:(NSString *)format {
 	NSDateFormatter *formatter = [[[NSDateFormatter alloc] init] autorelease];
@@ -86,8 +84,7 @@
 	return [formatter stringFromDate:self];
 }
 
-#pragma mark -
-#pragma mark Compare
+#pragma mark - Compare
 
 + (BOOL)date:(NSDate*)date isBetweenDate:(NSDate*)beginDate andDate:(NSDate*)endDate {
     if ([date compare:beginDate] == NSOrderedAscending)
@@ -177,8 +174,7 @@
 	return ([self laterDate:aDate] == self);
 }
 
-#pragma mark -
-#pragma mark Create dates
+#pragma mark - Create dates
 
 + (NSDate *)dateForDay:(NSInteger)day month:(NSInteger)month year:(NSInteger)year hour:(NSInteger)hour minute:(NSInteger)minute {
 	NSDateComponents *comps = [[[NSDateComponents alloc] init] autorelease];
@@ -299,8 +295,7 @@
 	return dTime;
 }
 
-#pragma mark -
-#pragma mark Query
+#pragma mark - Query
 
 - (NSInteger)minutesAfterDate:(NSDate *)aDate {
 	NSTimeInterval ti = [self timeIntervalSinceDate:aDate];
@@ -340,6 +335,33 @@
                                                  options:0];
     [gregorian release];
     return [components day];
+}
+
+#pragma mark - Rails
+
+
+static NSDateFormatter *railsDateFormatter;
+
+// parses rails server dates in the form of "2012-07-14T10:07:39Z"
+// this is the standard DB format for rails dates - time zone is UTC / GMT
++ (NSDate *)dateFromRailsString:(NSString *)dateString {
+    if (!railsDateFormatter) {
+        // create a formatter for the rails time format : "2012-07-14T10:07:39Z"
+        railsDateFormatter = [[NSDateFormatter alloc] init];
+        
+        // the locale needs to be set to prevent the formatter from doing something stupid in case the user has set their
+        // calendar to be the Mayan Lunar calendar.
+        NSLocale *locale = [[NSLocale alloc] initWithLocaleIdentifier:@"en_US_POSIX"];
+        [railsDateFormatter setLocale:locale];
+        
+        // set time zone to GMT
+        [railsDateFormatter setTimeZone:[NSTimeZone timeZoneForSecondsFromGMT:0]];
+        
+        // finally set the format
+        // Note: Note that both the T and the Z are in quotes, meaning they'll be ignored - they're not part of the pattern
+        [railsDateFormatter setDateFormat:@"yyyy-MM-dd'T'HH:mm:ss'Z'"];
+    }
+    return [railsDateFormatter dateFromString:dateString];
 }
 
 @end

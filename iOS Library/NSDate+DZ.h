@@ -76,4 +76,7 @@
 	- (NSInteger)daysAfterDate:(NSDate *)aDate;
 	- (NSInteger)daysBeforeDate:(NSDate *)aDate;
 	- (NSInteger)differenceInDaysTo:(NSDate *)toDate;
+
+    // Rails
+    + (NSDate *)dateFromRailsString:(NSString *)dateString;
 @end

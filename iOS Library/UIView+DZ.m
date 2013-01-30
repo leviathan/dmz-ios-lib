@@ -176,6 +176,10 @@
     [self.layer addAnimation:animation forKey:@"position"];
 }
 
+- (void)fadeInWithDuration:(NSTimeInterval)duration {
+    [UIView animateWithDuration:duration animations:^{ self.alpha = 1.0f; }];
+}
+
 - (void)fadeOutWithDuration:(NSTimeInterval)duration {
     [UIView animateWithDuration:duration animations:^{ self.alpha = 0.0f; }];
 }
