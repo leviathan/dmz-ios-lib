@@ -79,4 +79,5 @@
 
     // Rails
     + (NSDate *)dateFromRailsString:(NSString *)dateString;
+    - (NSString *)railsDate;
 @end

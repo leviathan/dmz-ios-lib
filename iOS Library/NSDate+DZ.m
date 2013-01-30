@@ -364,4 +364,20 @@ static NSDateFormatter *railsDateFormatter;
     return [railsDateFormatter dateFromString:dateString];
 }
 
+- (NSString *)railsDate {
+    // get the serverDateFormat in an initial transaction with the server
+    // or, simpler and more brittle, hardcode something like the following ...
+    NSString *serverDateFormat = @"yyyy-MM-dd'T'HH:mm:ss'Z'";
+    
+    // prepare a date formatter.  i allocate and hang onto this at init, but
+    // you can just do this inline to get started...
+    NSDateFormatter *_railsDateFormatter = [[NSDateFormatter alloc] init];
+    [_railsDateFormatter setDateFormat:serverDateFormat];
+    [_railsDateFormatter setTimeZone:[NSTimeZone timeZoneWithName:@"UTC"]];
+    
+    // this is in a category method on NSDate called asHttpParam, but the code
+    // here works fine to get started. the following gets the date ready to pass to server...
+    return [_railsDateFormatter stringFromDate:self];
+}
+
 @end
