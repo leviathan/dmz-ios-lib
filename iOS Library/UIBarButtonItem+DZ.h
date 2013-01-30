@@ -1,6 +1,6 @@
 //
 //  UIBarButtonItem+DZ.h
-//  iOS Library
+//  DMZ iOS Library
 //
 //  Created by Weinkauff Jan on 27.06.12.
 //  Copyright (c) 2012 Dreimannzelt. All rights reserved.

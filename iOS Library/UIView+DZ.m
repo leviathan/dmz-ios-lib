@@ -1,6 +1,6 @@
 //
 //  UIView+DZ.m
-//  de.dreimannzelt.addition.ios
+//  DMZ iOS Library
 //
 //  Created by Jan Weinkauff on 03.01.11.
 //  Copyright 2011 Dreimannzelt. All rights reserved.
@@ -174,6 +174,10 @@
     animation.fromValue = [NSValue valueWithCGPoint:CGPointMake(self.center.x, self.center.y)];
     animation.toValue = [NSValue valueWithCGPoint:CGPointMake(self.center.x, self.center.y + 3.0f)];
     [self.layer addAnimation:animation forKey:@"position"];
+}
+
+- (void)fadeOutWithDuration:(NSTimeInterval)duration {
+    [UIView animateWithDuration:duration animations:^{ self.alpha = 0.0f; }];
 }
 
 @end

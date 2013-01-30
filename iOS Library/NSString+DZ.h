@@ -1,6 +1,6 @@
 //
 //  NSString+DZ.h
-//  de.unique-holding.kapillaris.ipad
+//  DMZ iOS Library
 //
 //  Created by Jan Weinkauff on 15.02.11.
 //  Copyright 2011 Dreimannzelt. All rights reserved.

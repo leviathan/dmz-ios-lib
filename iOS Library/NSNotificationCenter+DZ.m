@@ -1,6 +1,6 @@
 //
 //  NSNotificationCenter+DZ.m
-//  de.dreimannzelt.additions.ios
+//  DMZ iOS Library
 //
 //  Created by Jan Weinkauff on 21.05.10.
 //  Copyright 2010 Dreimannzelt. All rights reserved.

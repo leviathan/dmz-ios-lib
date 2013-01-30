@@ -1,5 +1,6 @@
 //
 //  UIViewController+DZ.m
+//  DMZ iOS Library
 //
 //  Created by Weinkauff Jan on 23.09.11.
 //  Copyright 2011 Dreimannzelt. All rights reserved.

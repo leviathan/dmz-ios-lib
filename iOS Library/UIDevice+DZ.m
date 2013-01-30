@@ -1,6 +1,6 @@
 //
 //  UIDevice+DZ.m
-//  MAGAZIN
+//  DMZ iOS Library
 //
 //  Created by Weinkauff Jan on 07.11.11.
 //  Copyright (c) 2011 Dreimannzelt. All rights reserved.

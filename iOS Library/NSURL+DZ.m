@@ -1,6 +1,6 @@
 //
 //  NSURL+DZ.m
-//  de.dreimannzelt.additions.ios
+//  DMZ iOS Library
 //
 //  Created by Jan Weinkauff on 30.07.10.
 //  Copyright (c) 2010 Dreimannzelt. All rights reserved.

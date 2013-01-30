@@ -1,6 +1,6 @@
 //
 //  UIView+DZ.h
-//  de.dreimannzelt.addition.ios
+//  DMZ iOS Library
 //
 //  Created by Jan Weinkauff on 03.01.11.
 //  Copyright 2011 Dreimannzelt. All rights reserved.
@@ -11,7 +11,7 @@
 
 @interface UIView (DZ)
 
-// Extended dimension attributes
+// Extended dimension attributes (based on frame)
 @property (nonatomic, assign) CGSize size;
 @property (nonatomic, assign) CGPoint origin;
 @property (nonatomic, assign) CGFloat width;
@@ -35,5 +35,7 @@
 - (void)animateLeftBounce;
 - (void)animateBottomBounce;
 - (void)animateTopBounce;
+
+- (void)fadeOutWithDuration:(NSTimeInterval)duratio;
 
 @end
