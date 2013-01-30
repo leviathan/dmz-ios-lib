@@ -92,13 +92,19 @@
 - (void)alignCenterVerticalToSuperviewAnimated:(BOOL)animated {
 	if (!self.superview)
 		return;
-	CGPoint newCenter = CGPointMake(self.center.x, self.superview.height / 2.0f);
+    [self alignCenterVerticalWithHeight:self.superview.height animated:animated];
+}
+
+- (void)alignCenterVerticalWithHeight:(CGFloat)height animated:(BOOL)animated {
+	if (!self.superview)
+		return;
+	CGPoint newCenter = CGPointMake(self.center.x, height / 2.0f);
 	if (animated)
 		[UIView animateWithDuration:0.5f animations:^{
 			self.center = newCenter;
 		}];
-	else 
-		self.center = newCenter;		
+	else
+		self.center = newCenter;    
 }
 
 #pragma mark - Query

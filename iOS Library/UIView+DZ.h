@@ -23,6 +23,7 @@
 - (void)alignCenterToCenterOfSuperviewAnimated:(BOOL)animated;
 - (void)alignCenterHorizontalToSuperviewAnimated:(BOOL)animated;
 - (void)alignCenterVerticalToSuperviewAnimated:(BOOL)animated;
+- (void)alignCenterVerticalWithHeight:(CGFloat)height animated:(BOOL)animated;
 
 // Query
 - (UIView *)subviewWhichSatisfy:(BOOL (^) (UIView *))block;
