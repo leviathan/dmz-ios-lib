@@ -339,27 +339,15 @@
 
 #pragma mark - Rails
 
-
 static NSDateFormatter *railsDateFormatter;
 
-// parses rails server dates in the form of "2012-07-14T10:07:39Z"
-// this is the standard DB format for rails dates - time zone is UTC / GMT
 + (NSDate *)dateFromRailsString:(NSString *)dateString {
     if (!railsDateFormatter) {
-        // create a formatter for the rails time format : "2012-07-14T10:07:39Z"
         railsDateFormatter = [[NSDateFormatter alloc] init];
-        
-        // the locale needs to be set to prevent the formatter from doing something stupid in case the user has set their
-        // calendar to be the Mayan Lunar calendar.
         NSLocale *locale = [[NSLocale alloc] initWithLocaleIdentifier:@"en_US_POSIX"];
         [railsDateFormatter setLocale:locale];
-        
-        // set time zone to GMT
         [railsDateFormatter setTimeZone:[NSTimeZone timeZoneForSecondsFromGMT:0]];
-        
-        // finally set the format
-        // Note: Note that both the T and the Z are in quotes, meaning they'll be ignored - they're not part of the pattern
-        [railsDateFormatter setDateFormat:@"yyyy-MM-dd'T'HH:mm:ss'Z'"];
+        [railsDateFormatter setDateFormat:@"yyyy-MM-dd'T'HH:mm:ssZZZZ"];
     }
     return [railsDateFormatter dateFromString:dateString];
 }
@@ -367,7 +355,7 @@ static NSDateFormatter *railsDateFormatter;
 - (NSString *)railsDate {
     // get the serverDateFormat in an initial transaction with the server
     // or, simpler and more brittle, hardcode something like the following ...
-    NSString *serverDateFormat = @"yyyy-MM-dd'T'HH:mm:ss'Z'";
+    NSString *serverDateFormat = @"yyyy-MM-dd'T'HH:mm:ssZZZZ";
     
     // prepare a date formatter.  i allocate and hang onto this at init, but
     // you can just do this inline to get started...
