@@ -47,7 +47,7 @@
 /* Begin PBXFileReference section */
 		611472F1147EA3FE00F9DEA2 /* libiOS Library.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libiOS Library.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		611472F4147EA3FE00F9DEA2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		611472F8147EA3FE00F9DEA2 /* iOS Library-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iOS Library-Prefix.pch"; sourceTree = "<group>"; };
+		611472F8147EA3FE00F9DEA2 /* DMZ-iOS-Library-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DMZ-iOS-Library-Prefix.pch"; sourceTree = "<group>"; };
 		61147309147EA45D00F9DEA2 /* DZMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZMacros.h; sourceTree = "<group>"; };
 		6114730B147EA45D00F9DEA2 /* NSArray+DZ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+DZ.h"; sourceTree = "<group>"; };
 		6114730C147EA45D00F9DEA2 /* NSArray+DZ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+DZ.m"; sourceTree = "<group>"; };
@@ -170,7 +170,7 @@
 		611472F7147EA3FE00F9DEA2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				611472F8147EA3FE00F9DEA2 /* iOS Library-Prefix.pch */,
+				611472F8147EA3FE00F9DEA2 /* DMZ-iOS-Library-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -204,9 +204,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		611472F0147EA3FE00F9DEA2 /* iOS Library */ = {
+		611472F0147EA3FE00F9DEA2 /* DMZ-iOS-Library */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 611472FE147EA3FE00F9DEA2 /* Build configuration list for PBXNativeTarget "iOS Library" */;
+			buildConfigurationList = 611472FE147EA3FE00F9DEA2 /* Build configuration list for PBXNativeTarget "DMZ-iOS-Library" */;
 			buildPhases = (
 				611472ED147EA3FE00F9DEA2 /* Sources */,
 				611472EE147EA3FE00F9DEA2 /* Frameworks */,
@@ -216,7 +216,7 @@
 			);
 			dependencies = (
 			);
-			name = "iOS Library";
+			name = "DMZ-iOS-Library";
 			productName = "iOS Library";
 			productReference = 611472F1147EA3FE00F9DEA2 /* libiOS Library.a */;
 			productType = "com.apple.product-type.library.static";
@@ -230,7 +230,7 @@
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = Dreimannzelt;
 			};
-			buildConfigurationList = 611472EB147EA3FE00F9DEA2 /* Build configuration list for PBXProject "iOS Library" */;
+			buildConfigurationList = 611472EB147EA3FE00F9DEA2 /* Build configuration list for PBXProject "DMZ-iOS-Library" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -242,7 +242,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				611472F0147EA3FE00F9DEA2 /* iOS Library */,
+				611472F0147EA3FE00F9DEA2 /* DMZ-iOS-Library */,
 			);
 		};
 /* End PBXProject section */
@@ -328,9 +328,9 @@
 			buildSettings = {
 				DSTROOT = /tmp/iOS_Library.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "iOS Library/iOS Library-Prefix.pch";
+				GCC_PREFIX_HEADER = "iOS Library/DMZ-iOS-Library-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "DMZ-iOS-Library";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -340,9 +340,9 @@
 			buildSettings = {
 				DSTROOT = /tmp/iOS_Library.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "iOS Library/iOS Library-Prefix.pch";
+				GCC_PREFIX_HEADER = "iOS Library/DMZ-iOS-Library-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "DMZ-iOS-Library";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -350,7 +350,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		611472EB147EA3FE00F9DEA2 /* Build configuration list for PBXProject "iOS Library" */ = {
+		611472EB147EA3FE00F9DEA2 /* Build configuration list for PBXProject "DMZ-iOS-Library" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				611472FC147EA3FE00F9DEA2 /* Debug */,
@@ -359,7 +359,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		611472FE147EA3FE00F9DEA2 /* Build configuration list for PBXNativeTarget "iOS Library" */ = {
+		611472FE147EA3FE00F9DEA2 /* Build configuration list for PBXNativeTarget "DMZ-iOS-Library" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				611472FF147EA3FE00F9DEA2 /* Debug */,
