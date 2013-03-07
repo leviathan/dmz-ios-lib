@@ -3,6 +3,8 @@
 //  DMZ iOS Library
 //
 //  Created by Jan Weinkauff on 16.04.10.
+//  Extended by Jörg Polakowski
+//
 //  Copyright 2010 Dreimannzelt. All rights reserved.
 //
 
