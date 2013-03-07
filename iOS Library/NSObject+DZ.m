@@ -35,4 +35,11 @@
     block();
 }
 
+#pragma mark -
+#pragma mark Class
+
+- (NSString *)getClassName {
+    return [NSString stringWithFormat:@"%s", class_getName([self class])];
+}
+
 @end

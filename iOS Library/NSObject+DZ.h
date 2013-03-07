@@ -18,4 +18,10 @@
 	- (id)ifRespondsPerformSelector:(SEL)selector withObject:(id)firstObject;
 
     - (void)performBlockOnMainThread:(void (^)(void))block;
+
+/**
+ * Returns the class name of this class.
+ */
+- (NSString *)getClassName;
+
 @end
