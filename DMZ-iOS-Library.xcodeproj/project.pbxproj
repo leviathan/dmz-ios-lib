@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1FE3BB1C16EF7F4600CD85BB /* UIScreen+DZ.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FE3BB1A16EF7F4600CD85BB /* UIScreen+DZ.h */; };
+		1FE3BB1D16EF7F4600CD85BB /* UIScreen+DZ.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FE3BB1B16EF7F4600CD85BB /* UIScreen+DZ.m */; };
 		611472F5147EA3FE00F9DEA2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 611472F4147EA3FE00F9DEA2 /* Foundation.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		61147323147EA45D00F9DEA2 /* DZMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 61147309147EA45D00F9DEA2 /* DZMacros.h */; };
 		61147325147EA45D00F9DEA2 /* NSArray+DZ.h in Headers */ = {isa = PBXBuildFile; fileRef = 6114730B147EA45D00F9DEA2 /* NSArray+DZ.h */; };
@@ -45,7 +47,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		611472F1147EA3FE00F9DEA2 /* libiOS Library.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libiOS Library.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FE3BB1A16EF7F4600CD85BB /* UIScreen+DZ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScreen+DZ.h"; sourceTree = "<group>"; };
+		1FE3BB1B16EF7F4600CD85BB /* UIScreen+DZ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScreen+DZ.m"; sourceTree = "<group>"; };
+		611472F1147EA3FE00F9DEA2 /* libiOS Library.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libiOS Library.a"; path = "libDMZ-iOS-Library.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		611472F4147EA3FE00F9DEA2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		611472F8147EA3FE00F9DEA2 /* DMZ-iOS-Library-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DMZ-iOS-Library-Prefix.pch"; sourceTree = "<group>"; };
 		61147309147EA45D00F9DEA2 /* DZMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZMacros.h; sourceTree = "<group>"; };
@@ -161,6 +165,8 @@
 				61147342147EA4F700F9DEA2 /* DZFilter.m */,
 				618B82AC159AF4D4002AFDF4 /* UIBarButtonItem+DZ.h */,
 				618B82AD159AF4D4002AFDF4 /* UIBarButtonItem+DZ.m */,
+				1FE3BB1A16EF7F4600CD85BB /* UIScreen+DZ.h */,
+				1FE3BB1B16EF7F4600CD85BB /* UIScreen+DZ.m */,
 				611472F7147EA3FE00F9DEA2 /* Supporting Files */,
 			);
 			name = Classes;
@@ -198,6 +204,7 @@
 				61147343147EA4F700F9DEA2 /* DZFilter.h in Headers */,
 				61147347147EA50800F9DEA2 /* UIDevice+DZ.h in Headers */,
 				618B82AE159AF4D4002AFDF4 /* UIBarButtonItem+DZ.h in Headers */,
+				1FE3BB1C16EF7F4600CD85BB /* UIScreen+DZ.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,6 +274,7 @@
 				61147344147EA4F700F9DEA2 /* DZFilter.m in Sources */,
 				61147348147EA50800F9DEA2 /* UIDevice+DZ.m in Sources */,
 				618B82AF159AF4D4002AFDF4 /* UIBarButtonItem+DZ.m in Sources */,
+				1FE3BB1D16EF7F4600CD85BB /* UIScreen+DZ.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
