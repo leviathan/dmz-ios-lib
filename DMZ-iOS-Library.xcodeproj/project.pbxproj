@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F54890816FB406400B632D1 /* UIButton+DZ.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F54890616FB406400B632D1 /* UIButton+DZ.h */; };
+		1F54890916FB406400B632D1 /* UIButton+DZ.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F54890716FB406400B632D1 /* UIButton+DZ.m */; };
 		1FE3BB1C16EF7F4600CD85BB /* UIScreen+DZ.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FE3BB1A16EF7F4600CD85BB /* UIScreen+DZ.h */; };
 		1FE3BB1D16EF7F4600CD85BB /* UIScreen+DZ.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FE3BB1B16EF7F4600CD85BB /* UIScreen+DZ.m */; };
 		1FE3BB9216F09D1C00CD85BB /* MKMapView+DZ.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FE3BB9016F09D1C00CD85BB /* MKMapView+DZ.h */; };
@@ -49,6 +51,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F54890616FB406400B632D1 /* UIButton+DZ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+DZ.h"; sourceTree = "<group>"; };
+		1F54890716FB406400B632D1 /* UIButton+DZ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+DZ.m"; sourceTree = "<group>"; };
 		1FE3BB1A16EF7F4600CD85BB /* UIScreen+DZ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScreen+DZ.h"; sourceTree = "<group>"; };
 		1FE3BB1B16EF7F4600CD85BB /* UIScreen+DZ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScreen+DZ.m"; sourceTree = "<group>"; };
 		1FE3BB9016F09D1C00CD85BB /* MKMapView+DZ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MKMapView+DZ.h"; sourceTree = "<group>"; };
@@ -161,6 +165,8 @@
 				6114731A147EA45D00F9DEA2 /* NSThread+DZ.m */,
 				6114731B147EA45D00F9DEA2 /* NSURL+DZ.h */,
 				6114731C147EA45D00F9DEA2 /* NSURL+DZ.m */,
+				1F54890616FB406400B632D1 /* UIButton+DZ.h */,
+				1F54890716FB406400B632D1 /* UIButton+DZ.m */,
 				6114731D147EA45D00F9DEA2 /* UIView+DZ.h */,
 				6114731E147EA45D00F9DEA2 /* UIView+DZ.m */,
 				6114731F147EA45D00F9DEA2 /* UIViewController+DZ.h */,
@@ -212,6 +218,7 @@
 				618B82AE159AF4D4002AFDF4 /* UIBarButtonItem+DZ.h in Headers */,
 				1FE3BB1C16EF7F4600CD85BB /* UIScreen+DZ.h in Headers */,
 				1FE3BB9216F09D1C00CD85BB /* MKMapView+DZ.h in Headers */,
+				1F54890816FB406400B632D1 /* UIButton+DZ.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +290,7 @@
 				618B82AF159AF4D4002AFDF4 /* UIBarButtonItem+DZ.m in Sources */,
 				1FE3BB1D16EF7F4600CD85BB /* UIScreen+DZ.m in Sources */,
 				1FE3BB9316F09D1C00CD85BB /* MKMapView+DZ.m in Sources */,
+				1F54890916FB406400B632D1 /* UIButton+DZ.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
