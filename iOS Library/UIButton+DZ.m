@@ -41,3 +41,5 @@ static char overviewKey;
     block = [[self actions] objectForKey:kUIButtonBlockTouchUpInside];
     block();
 }
+
+@end
