@@ -190,4 +190,16 @@
     [UIView animateWithDuration:duration animations:^{ self.alpha = 0.0f; }];
 }
 
+#pragma mark view management
+
+- (BOOL)removeSubviewWithTag:(NSUInteger)tag {
+    BOOL outcome = NO;
+    UIView *subview = [self viewWithTag:tag];
+    if (subview) {
+        [subview removeFromSuperview];
+        outcome = YES;
+    }
+    return outcome;
+}
+
 @end

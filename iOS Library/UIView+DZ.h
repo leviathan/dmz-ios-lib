@@ -40,4 +40,11 @@
 - (void)fadeInWithDuration:(NSTimeInterval)duration;
 - (void)fadeOutWithDuration:(NSTimeInterval)duration;
 
+// View management
+/**
+* Removes the view's subview, which is identified by 'tag'.
+* 'YES' is returned when any subview was removed, otherwise 'NO' is returned.
+*/
+- (BOOL)removeSubviewWithTag:(NSUInteger)tag;
+
 @end
