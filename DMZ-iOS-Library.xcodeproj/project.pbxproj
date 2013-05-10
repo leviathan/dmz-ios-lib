@@ -48,6 +48,8 @@
 		617ADEB114C597180015C57F /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 617ADEB014C597180015C57F /* Accelerate.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		618B82AE159AF4D4002AFDF4 /* UIBarButtonItem+DZ.h in Headers */ = {isa = PBXBuildFile; fileRef = 618B82AC159AF4D4002AFDF4 /* UIBarButtonItem+DZ.h */; };
 		618B82AF159AF4D4002AFDF4 /* UIBarButtonItem+DZ.m in Sources */ = {isa = PBXBuildFile; fileRef = 618B82AD159AF4D4002AFDF4 /* UIBarButtonItem+DZ.m */; };
+		AF3EA2DC6808FE50315154B2 /* NSNull+DZ.m in Sources */ = {isa = PBXBuildFile; fileRef = AF3EACD561DBACF8D1322CCC /* NSNull+DZ.m */; };
+		AF3EAB1A79DDA0521B9F1CB2 /* NSNull+DZ.h in Headers */ = {isa = PBXBuildFile; fileRef = AF3EAA0658EBF3579F7FFDDC /* NSNull+DZ.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -94,6 +96,8 @@
 		617ADEB014C597180015C57F /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		618B82AC159AF4D4002AFDF4 /* UIBarButtonItem+DZ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+DZ.h"; sourceTree = "<group>"; };
 		618B82AD159AF4D4002AFDF4 /* UIBarButtonItem+DZ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+DZ.m"; sourceTree = "<group>"; };
+		AF3EAA0658EBF3579F7FFDDC /* NSNull+DZ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNull+DZ.h"; sourceTree = "<group>"; };
+		AF3EACD561DBACF8D1322CCC /* NSNull+DZ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNull+DZ.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +184,8 @@
 				1FE3BB1A16EF7F4600CD85BB /* UIScreen+DZ.h */,
 				1FE3BB1B16EF7F4600CD85BB /* UIScreen+DZ.m */,
 				611472F7147EA3FE00F9DEA2 /* Supporting Files */,
+				AF3EACD561DBACF8D1322CCC /* NSNull+DZ.m */,
+				AF3EAA0658EBF3579F7FFDDC /* NSNull+DZ.h */,
 			);
 			name = Classes;
 			path = "iOS Library";
@@ -219,6 +225,7 @@
 				1FE3BB1C16EF7F4600CD85BB /* UIScreen+DZ.h in Headers */,
 				1FE3BB9216F09D1C00CD85BB /* MKMapView+DZ.h in Headers */,
 				1F54890816FB406400B632D1 /* UIButton+DZ.h in Headers */,
+				AF3EAB1A79DDA0521B9F1CB2 /* NSNull+DZ.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,6 +298,7 @@
 				1FE3BB1D16EF7F4600CD85BB /* UIScreen+DZ.m in Sources */,
 				1FE3BB9316F09D1C00CD85BB /* MKMapView+DZ.m in Sources */,
 				1F54890916FB406400B632D1 /* UIButton+DZ.m in Sources */,
+				AF3EA2DC6808FE50315154B2 /* NSNull+DZ.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
