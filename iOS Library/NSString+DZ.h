@@ -12,6 +12,13 @@
 @interface NSString (DZ)
 
 // State
+/**
+* Checks if the receiver is <null> or empty.
+*
+* Returns YES, if the receiver is <null> or empty, otherwise NO.
+*
+* Note: <null> does not refer to nil
+*/
 - (BOOL)isEmpty;
 - (BOOL)isNotEmpty;
 - (BOOL)isNumeric;

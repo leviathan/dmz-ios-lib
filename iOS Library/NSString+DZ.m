@@ -7,6 +7,7 @@
 //
 
 #import "NSString+DZ.h"
+#import "NSNull+DZ.h"
 
 
 @implementation NSString (DZ)
@@ -14,7 +15,7 @@
 #pragma mark - State
 
 - (BOOL)isEmpty {
-    return [self length] == 0;
+    return self == [NSNull idNull] || [self length] == 0;
 }
 
 - (BOOL)isNotEmpty {
