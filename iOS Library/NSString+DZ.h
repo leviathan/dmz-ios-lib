@@ -11,6 +11,8 @@
 
 @interface NSString (DZ)
 
++ (BOOL)isEmpty:(NSString *)aString;
+
 // State
 /**
 * Checks if the receiver is <null> or empty.

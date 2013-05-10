@@ -12,6 +12,10 @@
 
 @implementation NSString (DZ)
 
++ (BOOL)isEmpty:(NSString *)aString {
+    return aString == [NSNull idNull] || [aString isEmpty];
+}
+
 #pragma mark - State
 
 - (BOOL)isEmpty {
